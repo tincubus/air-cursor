@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --color-base: #0a0e17;
+  --color-base-elevated: #121a2e;
+  --color-skeleton: #22d3ee;
+  --color-accent: #a78bfa;
+  --color-accent-glow: #818cf8;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-base);
+  color: #e2e8f0;
+  overflow: hidden;
+}
+
+.glass-panel {
+  background: rgb(18 26 46 / 55%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  backdrop-filter: blur(16px);
+}
